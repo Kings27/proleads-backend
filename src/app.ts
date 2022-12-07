@@ -5,8 +5,6 @@ import { middlewares } from './middlewares/handler.error';
 import { routes as apiRoutes } from './routers/index';
 const app = express();
 
-console.log("entrou aq")
-
 app.use(bodyParser.json({ limit: '50mb', type: 'application/json' }));
 app.use(params.expressMiddleware());
 
